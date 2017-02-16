@@ -1,0 +1,219 @@
+/*
+ Resets defualt browser settings
+ reset.css
+ */
+/*
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+a:active {
+    outline: none;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+*/
+/*
+ Page style
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #434343;
+    padding: 20px 0;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+*/
+
+
+#container {
+    width: 1000px;
+    height: 300px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    background-color: #ececec;
+}
+
+/*#example {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    padding: 0;
+    background-color: #dcdcdc;
+}*/
+
+/*#ribbon {
+    position: absolute;
+    top: -3px;
+    left: -15px;
+    z-index: 500;
+}*/
+
+#frame {
+    position: absolute;
+    z-index: 0;
+    width: 1000px;
+    height: 300px;
+    top: 5px;
+    left: 5px;
+}
+
+/*
+ Slideshow
+ */
+
+#slides {
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    z-index: 100;
+}
+
+/*
+ Slides container
+ Important:
+ Set the width of your slides container
+ Set to display none, prevents content flash
+ */
+
+.slides_container {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    left: -7px;
+    display: none;
+    box-shadow: 3px 3px 5px #000;
+}
+
+/*
+ Each slide
+ Important:
+ Set the width of your slides
+ If height not specified height will be set by the slide content
+ Set to display block
+ */
+
+.slides_container div.slide {
+    width: 1000px;
+    height: 300px;
+    display: block;
+    
+}
+
+.slides_container p{
+    font: normal;
+    letter-spacing: 0;
+    color: #FFF;
+    position: relative;
+    bottom: 20px;
+    padding: 5px;
+}
+
+/*
+ Next/prev buttons
+ */
+
+#slides .next, #slides .prev {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 24px;
+    height: 43px;
+    display: block;
+    z-index: 101;
+}
+
+#slides .next {
+    left: 965px;
+}
+
+/*
+ Pagination
+ */
+
+.pagination {
+    margin: -25px auto ;
+    width: 980px;
+}
+
+.pagination li {
+    position: relative;
+    float: right;
+    margin: 0 1px;
+    list-style: none;
+    z-index: 100;
+}
+
+.pagination li a {
+    display: block;
+    width: 12px;
+    height: 0;
+    padding-top: 12px;
+    background-image: url(../img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.pagination li.current a {
+    background-position: 0 -12px;
+}
+
+/*
+ Caption
+ */
+
+.caption {
+    z-index: 500;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    min-height: 70px;
+    padding: 5px 20px 0 20px;
+    background: #000;
+    background: rgba(0,0,0,.5);
+    width: 275px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    text-align: justify;
+    border-top: 1px solid #CCC;
+    text-shadow: none;
+}

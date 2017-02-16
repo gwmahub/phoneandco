@@ -1,0 +1,7 @@
+++++++++++++++++++++ Feuille de route ++++++++++++++++++++++
+
+Zone administration
+- creer nouveau /dossier private_area -> dupliquer la structure MVC
+
+ - creer page index_admin
+	- creer le menu -> include dans le header

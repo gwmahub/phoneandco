@@ -1,0 +1,7 @@
+++++++++++++++++++++ Feuille de route ++++++++++++++++++++++
+
+Zone administration
+- creer nouveau /dossier private_phco_area -> dupliquer la structure MVC
+
+ - creer page admin_home
+	- creer le menu -> include dans le header

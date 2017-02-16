@@ -1,0 +1,12 @@
+admin_private_phco_area/ckeditor/
+admin_private_phco_area/img/
+admin_private_phco_area/js/tinymce/
+admin_private_phco_area/lib/lib_fpdf/
+admin_private_phco_area/lib/pdf/
+admin_private_phco_area/upload/
+admin_private_phco_area/upload_docs/
+nbproject/
+img/
+js/tinymce/
+upload/
+.idea/
